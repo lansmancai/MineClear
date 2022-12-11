@@ -186,8 +186,8 @@ public class Mine {
             //将用户输入的字符串以逗号（，）作为分隔符，分隔成两个字符串
             String[] posStrArr= inputStr.split(",");
 		//将两个字符串转换成用户下棋的坐标
-        int xPos = Integer.parseInt(posStrArr[0]);
-        int yPos = Integer.parseInt(posStrArr[1]);
+        int xPos = Integer.parseInt(posStrArr[0]) - 1;
+        int yPos = Integer.parseInt(posStrArr[1]) - 1;
 		//System.out.println(xPos);
 		//System.out.println(yPos);
 		//Windows下Java清空控制台的方法未找到，暂时用换行30的方法替代。
